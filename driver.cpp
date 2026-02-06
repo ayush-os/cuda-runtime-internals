@@ -23,8 +23,8 @@ int main() {
 
     // 3. CONTEXT MANAGEMENT
     CUcontext ctxA, ctxB;
-    cuCtxCreate(&ctxA, 0, cuDevice);
-    cuCtxCreate(&ctxB, 0, cuDevice);
+    cuCtxCreate(&ctxA, 0, CUdevice);
+    cuCtxCreate(&ctxB, 0, CUdevice);
 
     // 4. LOAD MODULE & FUNCTION
     CUmodule hModule;
